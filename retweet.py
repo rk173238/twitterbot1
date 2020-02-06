@@ -26,7 +26,7 @@ while (ttime > 0):
     i = 0
     polp,poln,ipos,ineg = 0,0,0,0
     
-    #checks sentiment for each tweet.
+    #checks sentiment for each tweet with polarity between 0 to 1
     for t in tweets:
         a = TextBlob(t.text)
         pol = a.sentiment.polarity
